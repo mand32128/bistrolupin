@@ -564,6 +564,21 @@ ul {
   letter-spacing: 0.05em;
 }
 
+.menu__blackboard {
+  margin: 48px auto 0;
+  max-width: 720px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.menu__blackboard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .menu__cta {
   text-align: center;
 }
