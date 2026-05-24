@@ -222,11 +222,13 @@
 
       <!-- Instagram埋め込みウィジェット（アカウント設定後に差し替え） -->
       <div class="instagram__feed" id="instagramFeed">
-        <div class="instagram__placeholder">
-          <p class="instagram__placeholder-icon">📸</p>
-          <p>インスタグラムの写真がここに表示されます</p>
-          <!-- ここにInstagramのBeaconやEmbedコードを挿入してください -->
-        </div>
+        <behold-widget feed-id="B0UPpqIrpLMCmoPn8K57"></behold-widget>
+        <script>
+          (() => {
+            const d=document,s=d.createElement("script");s.type="module";
+            s.src="https://w.behold.so/widget.js";d.head.append(s);
+          })();
+        </script>
       </div>
 
       <div class="instagram__cta">
