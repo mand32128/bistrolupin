@@ -44,6 +44,22 @@ document.querySelectorAll('.menu__card, .recruit__card, .concept__grid, .gallery
   observer.observe(el);
 });
 
+// Map tab switcher
+function switchMap(type, btn) {
+  const placeMap = document.getElementById('map-place');
+  const routeMap = document.getElementById('map-route');
+  const tabs = document.querySelectorAll('.map__tab');
+  tabs.forEach(t => t.classList.remove('map__tab--active'));
+  btn.classList.add('map__tab--active');
+  if (type === 'place') {
+    placeMap.style.display = 'block';
+    routeMap.style.display = 'none';
+  } else {
+    placeMap.style.display = 'none';
+    routeMap.style.display = 'block';
+  }
+}
+
 // Add visible class styles via JS (since CSS is separate)
 const style = document.createElement('style');
 style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
