@@ -645,6 +645,7 @@ behold-widget {
   display: block;
   width: 100%;
   --behold-columns: 3;
+  --behold-gap: 6px;
 }
 
 @media (max-width: 768px) {
