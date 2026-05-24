@@ -637,8 +637,20 @@ ul {
 }
 
 .instagram__feed {
-  min-height: 240px;
   margin-bottom: 40px;
+  width: 100%;
+}
+
+behold-widget {
+  display: block;
+  width: 100%;
+  --behold-columns: 3;
+}
+
+@media (max-width: 768px) {
+  behold-widget {
+    --behold-columns: 2;
+  }
 }
 
 
