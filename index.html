@@ -247,8 +247,13 @@
     </div>
     <div class="access__layout">
       <div class="access__map">
+        <div class="map__tabs">
+          <button class="map__tab map__tab--active" onclick="switchMap('place', this)">📍 地図</button>
+          <button class="map__tab" onclick="switchMap('route', this)">🚶 駅からのルート</button>
+        </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.494438403374!2d139.78497!3d35.69145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188934ec4a2191%3A0x4b6afb9c02f67de4!2z44CSMTAzLTAwMTEg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL5aSn6aaZ55S677yR77yRLTEy!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+          id="map-place"
+          src="https://maps.google.com/maps?q=BISTRO+LUPIN+東京都中央区日本橋大伝馬町11-12&output=embed&hl=ja&z=18"
           width="100%"
           height="100%"
           style="border:0;"
@@ -256,6 +261,17 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="BISTRO LUPIN の地図">
+        </iframe>
+        <iframe
+          id="map-route"
+          src="https://maps.google.com/maps?saddr=小伝馬町駅1番出口&daddr=東京都中央区日本橋大伝馬町11-12+BISTRO+LUPIN&output=embed&hl=ja"
+          width="100%"
+          height="100%"
+          style="border:0; display:none;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="小伝馬町駅からBISTRO LUPINへのルート">
         </iframe>
       </div>
       <div class="access__info">
